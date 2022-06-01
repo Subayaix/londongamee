@@ -1,0 +1,57 @@
+-- Civ
+
+local Thread1 = coroutine.create(function()
+    local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Weapon:FindFirstChild("HK416A5 Mod")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+end)
+
+coroutine.resume(Thread1)
+
+local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Weapon:FindFirstChild("SIGMPX")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+
+coroutine.resume(Thread1)
+
+local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Weapon:FindFirstChild("Glock19 Hybrid")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+
+coroutine.resume(Thread1)
+
+local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Utilities:FindFirstChild("Jump Baton")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+
+coroutine.resume(Thread1)
+
+local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Utilities:FindFirstChild("Search Wand")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+
+coroutine.resume(Thread1)
+
+local args = {
+    [1] = "Tool",
+    [2] = game:GetService("ReplicatedStorage").Network.Storage.Utilities:FindFirstChild("Fake Warrant ID")
+}
+
+game:GetService("ReplicatedStorage").Network.AssignEntity:FireServer(unpack(args))
+
+coroutine.resume(Thread1)
